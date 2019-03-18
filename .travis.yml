@@ -26,5 +26,9 @@ install:
 - npm install
 
 script:
-- npm run deploy
+# - npm run deploy
+- npm run sync 
+- hexo clean 
+- hexo g 
+- hexo d
 

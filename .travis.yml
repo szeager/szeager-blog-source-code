@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+- '8'
+branches:
+  only:
+  - master
+env:
+  global:
+  - GH_REF: github.com/szeager/szeager.github.io.git
+  - secure: mlgYyRz1JMuKIVxeQ3N+yiPp1VgJGYOdO0G3+YpCM/bMOHSukzYkz73k8qanvbPUipO9KtQ1DadqwG8HwQfUbGmmPHAuPzuNB0L0M5YmZJ+W488Nz3VPKPwfk6XAhVRsFY91GW/DOWv1Gq/VEt6kf2vfcEgVp2ODVRssbvnHFAUxkn7obpi1RGtjxU67Zg92INXsZbqI47/fw0ocQjm8wkpe9HLJPhB5YDkuj//3Xu6hj39TIXQNbgeTuGfLvdSP/v1Dc+brHnjSCMPJn9jaP1USzNAnfriA22J6TL3JcMSbm/mpwd4mIYQCUi85CTigogVvUwenuhfheJOMbHKj+T674NANdBdnDbTjif1wfjq7cgn9Xq7T1UH0hnuiIIfla8yAErwqW6Olf/5UDAsLyt5xM6StY74v/XtX+ybD+/MVxN6TZ+F0+h3bogQ2qWQgqbDLVU5oF0dNeRVJZRqCHVc1yvAIvWmplTREzg9McvJDuMBz5TNv48kwh+8sijLL8dy0ZVzM6p35B7b5QGHE6FJhUMVIvweLiiVnyfnsN6mVq3Ip8t6G6SQ+QdBu8HsB5vLeWCkxhuUDe9vmLfqBy2nX845an0AL1CaeCpxAZSkslvz8HWtFmAB0/oWedyiki9YTFghfPoj8OS/tBlaFUEuuz3CTdZmmzKrhxD/BKE4=
+before_install:
+- export TZ='Asia/Shanghai'
+- npm install -g hexo
+- npm install -g hexo-cli
+before_script:
+- git config --global user.name "${U_NAME}"
+- git config --global user.email "${U_EMAIL}"
+- sed -i'' "s~git@github.com:szeager/szeager.github.io.git~https://${GH_TOKEN}:x-oauth-basic@github.com/szeager/szeager.github.io.git~"  _config.yml
+install:
+- npm install
+script:
+- npm run deploy
+

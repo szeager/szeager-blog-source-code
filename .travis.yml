@@ -18,17 +18,13 @@ before_install:
 - npm install -g hexo-cli
 
 before_script:
-- git config --global user.name "${U_NAME}"
-- git config --global user.email "${U_EMAIL}"
+- git config --global user.name "${NAME}"
+- git config --global user.email "${EMAIL}"
 - sed -i'' "s~git@github.com:szeager/szeager.github.io.git~https://${GH_TOKEN}:x-oauth-basic@github.com/szeager/szeager.github.io.git~"  _config.yml
 
 install:
 - npm install
 
 script:
-# - npm run deploy
-- npm run sync 
-- hexo clean 
-- hexo g 
-- hexo d
+- npm run deploy
 

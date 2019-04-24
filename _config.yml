@@ -5,15 +5,15 @@
 # Site
 title: Hexo
 subtitle:
-description:
+description: It is szeager blog
 keywords:
-author: John Doe
-language:
+author: szeager
+language: zh-Hans
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://szeager.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -82,3 +82,28 @@ deploy:
   repo: git@github.com:szeager/szeager.github.io.git
   # repo: https://github.com/szeager/docs.git
   branch: master
+
+#妹纸动图
+live2d:
+  enable: true
+  scriptFrom: local
+  model:
+    scale: 1
+    hHeadPos: 0.5
+    vHeadPos: 0.618
+  display:
+    superSample: 2
+    width: 150
+    height: 300
+    position: right
+    hOffset: 0
+    vOffset: -20
+  mobile:
+    show: false
+  react:
+    opacityDefault: 0.5
+    opacityOnHover: 0.
+
+# SEO 优化
+sitemap:
+  path: sitemap.xml

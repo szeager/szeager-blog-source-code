@@ -107,3 +107,10 @@ live2d:
 # SEO 优化
 sitemap:
   path: sitemap.xml
+
+# 微搜索
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000

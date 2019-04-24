@@ -438,7 +438,7 @@ gitment:
 #jiathis:
   ##uid: Get this uid from http://www.jiathis.com/
 # JiaThis 分享服务
-jiathis: true
+# jiathis: true
 add_this_id: 5cbecf089dc38748
 
 # Share

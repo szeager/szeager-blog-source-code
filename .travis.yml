@@ -26,6 +26,7 @@ install:
 - npm install
 
 script:
+- YUQUE_TOKEN=${YUQUE_TOKEN} yuque-hexo sync
 - npm run deploy
 
 

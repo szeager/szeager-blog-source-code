@@ -1,5 +1,5 @@
 ---
-title: 第二节课作业
+title: 【go体系课】第二节课作业
 urlname: xtodfv
 date: '2021-05-20 06:47:07 -0700'
 tags: []
@@ -58,7 +58,7 @@ func main() {
 ![image.png](https://cdn.nlark.com/yuque/0/2021/png/290620/1621519060979-0fcf7135-dcc2-478a-ba40-ab2726942233.png#clientId=u13b444ac-8341-4&from=paste&height=791&id=u233b7a57&margin=%5Bobject%20Object%5D&name=image.png&originHeight=791&originWidth=1397&originalType=binary&size=157284&status=done&style=none&taskId=u0ecec50c-40dc-4cc2-b7f5-8855e3cdcbd&width=1397)
 ![image.png](https://cdn.nlark.com/yuque/0/2021/png/290620/1621519088635-4da10425-becf-4fd8-8254-5ba8bee9f131.png#clientId=u13b444ac-8341-4&from=paste&height=788&id=u5eccbf5d&margin=%5Bobject%20Object%5D&name=image.png&originHeight=788&originWidth=1400&originalType=binary&size=148277&status=done&style=none&taskId=uaf45b04e-7d0f-4731-9113-61c8eddcca2&width=1400)
 
-### • 选做 1：修复[https://golearn.coding.net/p/gonggongbanji/files/all/DF12](https://golearn.coding.net/p/gonggongbanji/files/all/DF12)中的 test case
+### 选做 1：修复[https://golearn.coding.net/p/gonggongbanji/files/all/DF12](https://golearn.coding.net/p/gonggongbanji/files/all/DF12)中的 test case
 
 ![image.png](https://cdn.nlark.com/yuque/0/2021/png/290620/1621520762795-77a89664-389e-4d71-8896-92c244f66762.png#clientId=u13b444ac-8341-4&from=paste&height=815&id=ub5ad5eb3&margin=%5Bobject%20Object%5D&name=image.png&originHeight=815&originWidth=1407&originalType=binary&size=118999&status=done&style=none&taskId=uaa5e29ad-7987-4c9a-873d-7d4c10f1581&width=1407)
 

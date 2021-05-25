@@ -20,6 +20,7 @@
     "hexo-renderer-ejs": "^0.3.1",
     "hexo-renderer-marked": "^0.3.2",
     "hexo-renderer-stylus": "^0.3.3",
+    "hexo-renderer-swig": "^1.1.0",
     "hexo-server": "^0.3.3",
     "hexo-wordcount": "^6.0.1",
     "leancloud-storage": "^3.13.0",
@@ -39,6 +40,7 @@
     "concurrency": 5,
     "baseUrl": "https://www.yuque.com/api/v2",
     "login": "szeager",
-    "repo": "blog"
+    "repo": "blog",
+    "token": "Ts3fcvqmS4vKIH6OaPVw98GYA6ITvsoPaGpeqpI4"
   }
 }

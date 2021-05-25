@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-- '12'
+- stable
 
 branches:
   only:
@@ -14,8 +14,9 @@ env:
 
 before_install:
 - export TZ='Asia/Shanghai'
-- yarn hexo
-- yarn hexo-cli
+- npm install hexo
+- npm install hexo-cli
+- npm install hexo-renderer-swig
 
 before_script:
 - git config --global user.name "${NAME}"
@@ -23,11 +24,11 @@ before_script:
 - sed -i'' "s~git@github.com:szeager/szeager.github.io.git~https://${GH_TOKEN}:x-oauth-basic@github.com/szeager/szeager.github.io.git~"  _config.yml
 
 install:
-- yarn
+- npm install
 
 script:
 - YUQUE_TOKEN=${YUQUE_TOKEN} yuque-hexo sync
-- yarn deploy
+- npm run deploy
 
 
 

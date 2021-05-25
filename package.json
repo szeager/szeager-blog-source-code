@@ -40,7 +40,6 @@
     "concurrency": 5,
     "baseUrl": "https://www.yuque.com/api/v2",
     "login": "szeager",
-    "repo": "blog",
-    "token": "Ts3fcvqmS4vKIH6OaPVw98GYA6ITvsoPaGpeqpI4"
+    "repo": "blog"
   }
 }

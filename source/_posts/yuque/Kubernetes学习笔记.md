@@ -34,7 +34,7 @@ worker 节点的组件(程序)
 kubelet 向 docker 发送指令，管理 docker 容器（启动 docker 镜像）
 kubeproxy   管理 docker 容器的网络
 
-![](https://cdn.nlark.com/yuque/0/2020/jpeg/290620/1586784497730-ef0ba374-fda9-440a-83a7-c6b0409f2201.jpeg#align=left&display=inline&height=300&originHeight=300&originWidth=564&size=0&status=done&style=none&width=564)
+![1](/images/yuque/Kubernetes学习笔记/1.png)
 
 核心概念
 Pod

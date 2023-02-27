@@ -1,0 +1,16 @@
+YAMLclass:
+  class_name: 友情链接
+  link_list:
+    1:
+      name: szEager
+      link: https://github.com/szeager
+      avatar: https://img.antmoe.com/avatar.png
+      descr: github
+class2:
+  class_name: 友情链接
+  link_list:
+    1:
+      name: szEagerBlog
+      link: https://szeager.github.io/
+      avatar: https://img.antmoe.com/avatar.png
+      descr: eager blog

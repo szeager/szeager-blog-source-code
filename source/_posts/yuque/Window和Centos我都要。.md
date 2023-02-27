@@ -35,11 +35,11 @@ categories: []
 
 #### 确认好 CentosU 盘的标签
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/290620/1586098411239-68e9d140-85ec-481d-97c0-208af95d4397.png#align=left&display=inline&height=466&name=image.png&originHeight=932&originWidth=1760&size=66439&status=done&style=none&width=880)
+![1](/images/yuque/Window和Centos我都要。/1.png)
 
 #### 在安装 CentOS7，【Install CentOS 7】时，按 Tab 键，进行编辑
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/290620/1586098735136-c95010b6-d32e-431d-8b09-a34b3777407f.png#align=left&display=inline&height=446&name=image.png&originHeight=892&originWidth=1204&size=1476971&status=done&style=none&width=602)
+![2](/images/yuque/Window和Centos我都要。/2.png)
 
 ```
 默认是：vmlinuz initrd=initrd.img inst.stage2=hd:LABEL=CentOS\x207\x20x86_64 rd.live.check quiet

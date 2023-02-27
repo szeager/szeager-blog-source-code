@@ -4,12 +4,12 @@
 
 # Site
 title: Eager Blog
-subtitle: 想要成为吉他手的程序员🎸
+subtitle: go!go!go!
 description: It is eager blog
-keywords:
+keywords: Eager,blog,golang,node
 author: szEager
-language: zh-Hans
-timezone: ''
+language: zh-CN #语言
+timezone: Asia/Shanghai #中国的时区
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -106,3 +106,7 @@ deploy:
   repo: git@github.com:szeager/szeager.github.io.git
   # repo: https://github.com/szeager/docs.git
   branch: master
+
+marked:
+  prependRoot: true
+  postAsset: true

@@ -1,0 +1,291 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-02-27 10:38:42'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hexo"><span class="site-name">Hexo</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2023/02/27/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-02-27T02:33:25.223Z" title="Created 2023-02-27 10:33:25">2023-02-27</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
+
+More info: Writing
+Run server1$ hexo server
+
+More info: Server
+Generate static files1$ hexo generate
+
+More info: Generating
+Deploy to remote sites1$ hexo deploy
+
+More info: Deployment
+</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2021/05/20/yuque/%E3%80%90go%E4%BD%93%E7%B3%BB%E8%AF%BE%E3%80%91%E7%AC%AC%E4%BA%8C%E8%8A%82%E8%AF%BE%E4%BD%9C%E4%B8%9A/" title="【go体系课】第二节课作业">【go体系课】第二节课作业</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-05-20T13:47:07.000Z" title="Created 2021-05-20 21:47:07">2021-05-20</time></span></div><div class="content">必做：channel ⼀⻚中，找出所有红线报错在 runtime 中的位置
+close of nil channel
+send on closed channel
+close of closed channel
+测试代码1234567891011121314151617181920212223242526package main// close of nil channelfunc main() &#123;	var ch chan int	close(ch)	ch &lt;- 1&#125;// close of closed channelfunc main() &#123;	ch := make(chan int, 1)	ch &lt;- 1	close(ch)	close(ch)&#125;// send on closed channelfunc main() &#123;	ch := make(chan int, 1)	ch &lt;- 1	close(ch)	ch &lt;- 2&#125;
+
+panic 源代码
+选做 1：修复https://golearn.coding ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2021/05/17/yuque/%E3%80%90go%E4%BD%93%E7%B3%BB%E8%AF%BE%E3%80%91%E7%AC%AC%E4%B8%80%E8%8A%82%E8%AF%BE%E4%BD%9C%E4%B8%9A/" title="【go体系课】第一节课作业">【go体系课】第一节课作业</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2021-05-17T13:59:13.000Z" title="Created 2021-05-17 21:59:13">2021-05-17</time></span></div><div class="content">1、部署好本机的 docker 环境，使用 ppt 中的 dockerfile build 自己的环境1234567➜  mkdir docker_test➜  cd docker_test➜  touch Dockerfile➜  docker_test lsDockerfile➜  cd docker_test➜  sudo  docker build -t test .
+
+
+123456789101112131415➜  docker_test sudo docker imagesREPOSITORY    TAG       IMAGE ID       CREATED              SIZEtest          latest    8f7733761a0d   About a minute ago   762MBhello-world   latest    d1165f221234   2 months ago         13.3kBcentos        latest    300e315adb2f   5 months ago         ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2020/04/13/yuque/Kubernetes%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="Kubernetes学习笔记">Kubernetes学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-04-13T13:17:35.000Z" title="Created 2020-04-13 21:17:35">2020-04-13</time></span></div><div class="content">一、概念理论k8sk8s 是一组服务器集群，k8s 所管理的集群节点上的容器
+功能自我修复弹性伸缩:实现根据服务器的并发情况，增加或缩减容器数量自动部署回滚服务发现和负载均衡机密和配置共享管理
+两类节点master node: 主worker node: 工作
+master 节点的组件(程序)apiserver 接收客户端操作 k8s 的指令（增删查改）scheduler 调度-从多个 worker node 节点的组件中选举一个来启动服务controller manager 向 worker 节点的 kubelet 发送指令 （控制后端节点启动 Docker 容器）etcd 数据库分布式键值存储系统。用于保存集群状态数据，比如 Pod,Service 等对象信息
+worker 节点的组件(程序)kubelet 向 docker 发送指令，管理 docker 容器（启动 docker 镜像）kubeproxy   管理 docker 容器的网络
+
+核心概念Pod最小部署单元可以有一个或者多个容器的一组容器的集合又称为容器组一个 Pod 中的容器共享网络命名空间是短暂的
+controll ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2020/04/07/yuque/Centos7%E9%85%8D%E7%BD%AEk8s/" title="Centos7配置k8s">Centos7配置k8s</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-04-07T13:04:35.000Z" title="Created 2020-04-07 21:04:35">2020-04-07</time></span></div><div class="content">环境系统 ：Centos 7 cluster: 一台 master 一台 node
+1、先把 wget 安装上
+
+[root@master01 ~]# yum -y install wget
+
+2、把&#x2F;etc&#x2F;yum.repos.d&#x2F;目录下所有的 repo 文件移动到其他目录，例如 bak&#x2F;，然后下载 Centos-7.repo。【因为添加 K8s 仓库的时候会报错，这步解决了这个问题，把步骤提前】
+12345[root@master01 ~]# mkdir bak[root@master01 ~]# mv *.repo bak/[root@master01 ~]# wget http://mirrors.aliyun.com/repo/Centos-7.repo参考：https://blog.csdn.net/kelvin_yin/article/details/86674703
+
+3、K8s 镜像仓库
+123456789101112131 新增kubernetes源[root@master01 ~]# cat &lt;&lt;EOF &gt; ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2020/04/05/yuque/Window%E5%92%8CCentos%E6%88%91%E9%83%BD%E8%A6%81%E3%80%82/" title="Window和Centos我都要。">Window和Centos我都要。</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-04-05T14:04:00.000Z" title="Created 2020-04-05 22:04:00">2020-04-05</time></span></div><div class="content">一、先安装 Windows 系统1、制作启动盘2、更改 bios 启动项、选择 U 盘启动3、进入 PE 系统，划分好分区，安装自己下好的 window 系统。
+二、安装 Centos1、UltraISO 刻录镜像至 U 盘内第一步，打开 CentOS-7-x86_64-DVD-1511.iso 镜像文件；第二步，选择打开的镜像文件，点击菜单栏中的启动-写入硬盘镜像；第三步，选择磁盘驱动器（U 盘所在位置），选中写入方式为**USB-HDD+**，点击写入。
+2、准备磁盘空闲区域第一步，打开磁盘管理器，计算机-管理-磁盘管理；第二步，选择压缩卷或者删除卷，获取空闲区域。
+3、重启电脑，选择 U 盘启动安装 CentOS 系统①、重启电脑，进入 Bios，选择 U 盘启动；②、进入安装界面，选择 Install CentOS7 项，进行安装；③、安装时出现问题【 Warning: dracut-initqueue timeout - starting timeout scripts】确认好 CentosU 盘的标签
+在安装 CentOS7，【Install CentOS 7】时，按 Ta ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2020/02/20/yuque/English%20learning%20for%20every%20day/" title="English learning for every day">English learning for every day</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-02-20T00:39:07.000Z" title="Created 2020-02-20 08:39:07">2020-02-20</time></span></div><div class="content">目标计划1、新概念英语第一册时间：【2020&#x2F;02&#x2F;20 ~ 2020&#x2F;03&#x2F;29】
+
+
+
+周一
+周二
+周三
+周四
+周五
+周六
+周日
+
+
+
+第一周
+
+
+
+[1,2,3,4]
+[5,6,7,8]
+[9,10,11,12]
+[13,14,15,16]
+
+
+第二周
+[17,18,19,20]
+复习前二十课
+[21,22,23,24]
+[25,26,27,28]
+[29,30]
+[31,32]
+[33,34]
+
+
+第三周
+[35,36]
+[37,38]
+[39,40]
+[41,复习]
+[42,43]
+[44,45]
+[46,47]
+
+
+第四周
+[48,49]
+[50,51]
+[52, 53]
+[54,55]
+[56,57]
+
+
+
+
+第五周
+
+[复习 42-56]
+[58,59]
+[60,61]
+[62,63]
+
+
+
+
+第六周
+[64,65]
+[66,67]
+[68,69]
+[70,71]
+[72]
+总复习
+
+
+
+①、新东方教学视频②、背单词③、课后习题④、背诵课文</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2020/02/01/yuque/%E3%80%90%E8%87%AA%E8%80%83%E5%AD%A6%E4%B9%A0%E3%80%91%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="【自考学习】操作系统">【自考学习】操作系统</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-02-01T05:15:46.000Z" title="Created 2020-02-01 13:15:46">2020-02-01</time></span></div><div class="content">一、操作系统概论计算机系统的资源：123硬件资源软件资源在计算机系统中，集中为了资源管理功能和控制程序执行功能的一种软件，称为操作系统。
+
+操作系统的定义:123456789101112定义的解析：组织和管理计算机系统中的硬件资源和软件资源。有效：指操作系统在管理计算机资源时要考虑到系统运行的效率和利源的利用率。要尽可能提高中央处理器的利用率，让它尽可能少的空转，应该在保证访问效能的前提下尽可能有效地利用其它资源。	比如，减少内存、硬盘资源的浪费合理： 指操作系统要公平对待不同的用户程序，保证系统不发生死锁和饥饿的现象。方便：指操作系统的人机界面要考虑到用户使用界面和程序接口两个方面的易用性、易学性和易维护性	用户接口：命令、图形界面  程序接口： windows api， linux 系统调用。（程序员更方便使用程序接口进行编程）
+
+操作系统的特征：1234567并发性	是指计算机系统中同时存在着若干个运行着的程序，从宏观上看，这些程序在同时向前推进。共享性	操作系统需与多个用户程序共用系统中的各种资源，（CPU、内存、外部设备等）随机性（异步性）	操作系统不能对所运行的程序的行为以 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2020/01/07/yuque/JavaScript%E5%A6%82%E4%BD%95%E5%AF%B9%E5%87%A0%E5%8D%81%E4%B8%8A%E7%99%BEG%E7%9A%84%E5%A4%A7%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99%E5%A4%84%E7%90%86/" title="JavaScript如何对几十上百G的大文件读写处理">JavaScript如何对几十上百G的大文件读写处理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2020-01-07T03:53:59.000Z" title="Created 2020-01-07 11:53:59">2020-01-07</time></span></div><div class="content">1、背景对 MongoDB 导出的 Json 文本进行统计处理， 但导出的 Json 文本因为是不规则的 Json 形式，无法使用 Json.parse。但是又要对数据进行各种计算聚合，达到业务所需的结果。
+2、错误想法 ❎由于没有处理过大文件的经历，没想到导出来的 Json 文件竟然高达几十 G。平时直接使用,fs.readFile， 读起文件来，直接崩溃。
+1234const fs = require(&#x27;fs&#x27;);const Promise = require(&#x27;bluebird&#x27;);const readFileAsync = Promise.promisify(fs.readFile);let content = await readFileAsync(filePath, &#x27;utf8’);
+
+3、着手学习 Stream 模块【流】
+&#x2F;&#x2F; 引入 Node 文档解释Node.js 中有四种基本流类型：
+
+Writable：可以向其中写入数据的流（例如 fs.createWriteStream()）。
+Readabl ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2019/11/18/yuque/Node.js%20%E4%B8%8EPHP%20urlencode%E7%9A%84%E5%B7%AE%E5%BC%82/" title="Node.js 与PHP urlencode的差异">Node.js 与PHP urlencode的差异</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2019-11-18T08:14:46.000Z" title="Created 2019-11-18 16:14:46">2019-11-18</time></span></div><div class="content">1、背景:当前业务需要对接第三方接口，为了确保数据的准确性，添加了签名规则。第三方那边说，中文要做 urlencode 处理。php 语言的话，就是参数数组做 http_build_query( ) 处理，然后拼接 计算 md5。
+我方才用的是 Node.js encodeURIComponent 进行去编码，发现签名始终通不过，经过对比，是 urlencode 之后产生的结果有一丝丝的差异比如空格的 urlencode:php http_build_query( )&#x3D;&gt;  +NodeencodeURIComponent&#x3D;&gt;  %20
+2、解决办法1234567891011this.urlencode = (str) =&gt; &#123;  str = `$&#123;str&#125;`.toString();  return encodeURIComponent(str)    .replace(/!/g, &quot;%21&quot;)    .replace(/&#x27;/g, &quot;%27&quot;)    .replace(/ ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">14</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><div class="content"><a class="title" href="/2023/02/27/hello-world/" title="Hello World">Hello World</a><time datetime="2023-02-27T02:33:25.223Z" title="Created 2023-02-27 10:33:25">2023-02-27</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2021/05/20/yuque/%E3%80%90go%E4%BD%93%E7%B3%BB%E8%AF%BE%E3%80%91%E7%AC%AC%E4%BA%8C%E8%8A%82%E8%AF%BE%E4%BD%9C%E4%B8%9A/" title="【go体系课】第二节课作业">【go体系课】第二节课作业</a><time datetime="2021-05-20T13:47:07.000Z" title="Created 2021-05-20 21:47:07">2021-05-20</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2021/05/17/yuque/%E3%80%90go%E4%BD%93%E7%B3%BB%E8%AF%BE%E3%80%91%E7%AC%AC%E4%B8%80%E8%8A%82%E8%AF%BE%E4%BD%9C%E4%B8%9A/" title="【go体系课】第一节课作业">【go体系课】第一节课作业</a><time datetime="2021-05-17T13:59:13.000Z" title="Created 2021-05-17 21:59:13">2021-05-17</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2020/04/13/yuque/Kubernetes%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="Kubernetes学习笔记">Kubernetes学习笔记</a><time datetime="2020-04-13T13:17:35.000Z" title="Created 2020-04-13 21:17:35">2020-04-13</time></div></div><div class="aside-list-item"><div class="content"><a class="title" href="/2020/04/07/yuque/Centos7%E9%85%8D%E7%BD%AEk8s/" title="Centos7配置k8s">Centos7配置k8s</a><time datetime="2020-04-07T13:04:35.000Z" title="Created 2020-04-07 21:04:35">2020-04-07</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span><a class="card-more-btn" href="/archives/" title="More">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/02/"><span class="card-archive-list-date">February 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/05/"><span class="card-archive-list-date">May 2021</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/04/"><span class="card-archive-list-date">April 2020</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/02/"><span class="card-archive-list-date">February 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/01/"><span class="card-archive-list-date">January 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/11/"><span class="card-archive-list-date">November 2019</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/05/"><span class="card-archive-list-date">May 2019</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/04/"><span class="card-archive-list-date">April 2019</span><span class="card-archive-list-count">2</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">14</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-02-27T02:38:42.947Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
